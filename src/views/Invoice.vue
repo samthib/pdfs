@@ -28,10 +28,10 @@
           <ContentInput v-model="invoiceNumber" :label="'Ref number'" @input="changeDatas" />
         </v-col>
         <v-col cols="12" sm="4">
-          <!-- <DatePicker v-model="issuedDate" :label="'Issued date'" @input="changeDatas" /> -->
+          <DatePicker v-model="issuedDate" :label="'Issued date'" @input="changeDatas" />
         </v-col>
         <v-col cols="12" sm="4">
-          <!-- <DatePicker v-model="duedDate" :label="'Due date'" @input="changeDatas" /> -->
+          <DatePicker v-model="duedDate" :label="'Due date'" @input="changeDatas" />
         </v-col>
       </v-row>
 
