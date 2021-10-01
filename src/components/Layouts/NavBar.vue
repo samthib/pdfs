@@ -7,7 +7,7 @@
         <img src="@/assets/img/icon.png" alt="Logo" />
       </v-avatar>
       
-      <v-toolbar-title class="font-weight-bold">{{ SiteTitle }}</v-toolbar-title>
+      <v-toolbar-title class="font-weight-bold">{{ $store.state.SiteTitle }}</v-toolbar-title>
 
       <template v-slot:extension>
         <v-tabs align-with-title center-active>
@@ -70,7 +70,6 @@ export default {
   data: () => ({
     drawer: false,
     group: null,
-    SiteTitle: "PDF Maker",
   }),
   watch: {
     group() {

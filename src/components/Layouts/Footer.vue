@@ -11,7 +11,7 @@
 
       <v-card-text class="white--text py-0">
         <v-btn color="red darken-4" depressed :href="links[1].url" target="blank" class="text-capitalize">
-          &copy; {{ new Date().getFullYear() }} <strong>Samuel Thibault</strong>
+          <h3>{{ $store.getters.SiteCopyright }}&copy;</h3>
         </v-btn>
       </v-card-text>
     </v-card>

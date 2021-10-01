@@ -15,12 +15,15 @@
 <script>
 export default {
   name: "RangeSelect",
-  props: ["value", "range", "label"],
-
+  props: {
+    value: Number,
+    range: Number,
+    label: String,
+  },
   data() {
     return {
       content: this.value,
-      items: Array.from({length: this.range}, (e, i)=> i+1)
+      items: Array.from({ length: this.range }, (e, i) => i + 1),
     };
   },
   methods: {
