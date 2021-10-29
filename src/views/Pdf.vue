@@ -73,7 +73,7 @@ export default {
   },
   methods: {
     /**
-     * Create a PDF with PDFMake from the value of docDefinition
+     * Create a PDF with PDFMake from the values of docDefinition
      */
     generateUri() {
       const pdfDocGenerator = pdfMake.createPdf(this.docDefinition);
@@ -93,13 +93,6 @@ export default {
       this.docDefinition.header[0].canvas[0].linearGradient[0] = this.color[0];
       this.docDefinition.header[0].canvas[0].linearGradient[1] = this.color[1];
       this.docDefinition.header[0].canvas[0].linearGradient[2] = this.color[0];
-
-      // setTimeout(() => {
-      //   if (this.timer + 1000 < Date.now()) {
-      //     this.generateUri();
-      //     this.timer = Date.now();
-      //   }
-      // }, 1000);
 
       this.generateUri();
     },

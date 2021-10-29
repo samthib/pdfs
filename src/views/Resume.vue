@@ -244,13 +244,6 @@ export default {
       this.docDefinition.content[2].columns[1].stack[7].ul[2].stack[0].text = this.paragraph3_item3_title;
       this.docDefinition.content[2].columns[1].stack[7].ul[2].stack[1].text = this.paragraph3_item3;
 
-      // setTimeout(() => {
-      //   if ((this.timer + 1000) < Date.now()) {
-      //     this.generateUri();
-      //     this.timer = Date.now();
-      //   }
-      // }, 1000);
-
       this.generateUri();
     },
   },

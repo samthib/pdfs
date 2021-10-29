@@ -201,13 +201,6 @@ export default {
       this.docDefinition.content[6].columns[1].stack[10].text = this.adress2;
       this.docDefinition.content[7].qr = this.website;
 
-      // setTimeout(() => {
-      //   if (this.timer + 1000 < Date.now()) {
-      //     this.generateUri();
-      //     this.timer = Date.now();
-      //   }
-      // }, 1000);
-
       this.generateUri();
     },
   },

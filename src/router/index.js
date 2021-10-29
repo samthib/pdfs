@@ -8,52 +8,60 @@ const routes = [
   {
     path: '/',
     name: 'Home',
+    meta: { title: 'Home' },
     component: Home,
-    meta: { title: 'Home' }
   },
   {
     path: '/about',
     name: 'About',
+    meta: { title: 'About' },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-    meta: { title: 'About' }
   },
   {
     path: '/contact',
     name: 'Contact',
+    meta: { title: 'Contact' },
     component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue')
   },
   {
     path: '/pdf',
     name: 'Pdf',
+    meta: { title: 'Pdf' },
     component: () => import(/* webpackChunkName: "pdf" */ '../views/Pdf.vue'),
-    meta: { title: 'Pdf' }
   },
   {
     path: '/resume',
     name: 'Resume',
+    meta: { title: 'Resume' },
     component: () => import(/* webpackChunkName: "resume" */ '../views/Resume.vue'),
-    meta: { title: 'Resume' }
   },
   {
     path: '/invoice',
     name: 'Invoice',
+    meta: { title: 'Invoice' },
     component: () => import(/* webpackChunkName: "invoice" */ '../views/Invoice.vue'),
-    meta: { title: 'Invoice' }
   },
   {
     path: '/business-card',
     name: 'Card',
+    meta: { title: 'Card' },
     component: () => import(/* webpackChunkName: "business-card" */ '../views/Card.vue'),
-    meta: { title: 'Card' }
   },
   {
     path: '/ticket',
     name: 'Ticket',
+    meta: { title: 'Ticket' },
     component: () => import(/* webpackChunkName: "ticket" */ '../views/Ticket.vue'),
-    meta: { title: 'Ticket' }
+  },
+  {
+    path: '*',
+    // path: '/:catchAll(.*)*',
+    name: 'PageNotFound',
+    meta: { title: 'Page Not Found' },
+    component: () => import(/* webpackChunkName: "business-card" */ '../views/errors/PageNotFound.vue'),
   }
 ]
 
