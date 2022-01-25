@@ -190,6 +190,7 @@ export default {
 
       // content
       this.docDefinition.content[2].text = this.title;
+      this.docDefinition.content[6].columns[0].stack[1].text = this.title;
       this.docDefinition.content[3].text = this.subtitle;
       this.docDefinition.content[6].columns[1].stack[0].text = this.name;
       this.docDefinition.content[6].columns[1].stack[1].text = this.occupation;
@@ -215,6 +216,7 @@ export default {
     // content
     this.logo = this.docDefinition.images.logo;
     this.title = this.docDefinition.content[2].text;
+    this.title = this.docDefinition.content[6].columns[0].stack[1].text;
     this.subtitle = this.docDefinition.content[3].text;
     this.name = this.docDefinition.content[6].columns[1].stack[0].text;
     this.occupation = this.docDefinition.content[6].columns[1].stack[1].text;
